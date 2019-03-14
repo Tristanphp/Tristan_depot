@@ -10,4 +10,4 @@ list.add(choix1);
 list.add(choix2);
 list.add(choix3);
 
-choix1.render();
+tasks.render();
