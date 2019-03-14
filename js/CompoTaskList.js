@@ -1,4 +1,22 @@
     /**
+     * @class
+     * @summary Composant qui affiche une tâche
+     * Les paramètres obligatoire, à transmettre sous la forme
+     * d'un objet, sont :
+     * - task : objet Task à afficher
+     * - element : objet HTMLElement du DOM dans lequel
+     *   le code HTML doit être affiché
+     * @param {*} param - Objet de paramétrage
+     * @example
+     * let tk = new Task('test', null);
+     * let compoTk = new CompoTask({
+     *    task: tk,
+     *    element: document.getElementById('task')
+     * }) 
+     * compoTk.render();
+     */
+    
+    /**
      * Utilisation de la méthode "constructor" qui initialise un objet
      */
 class CompoTaskList {
@@ -17,23 +35,7 @@ class CompoTaskList {
     getElement() {
         return this.param.element;
     }
-/**
-     * @class
-     * @summary Composant qui affiche une tâche
-     * Les paramètres obligatoire, à transmettre sous la forme
-     * d'un objet, sont :
-     * - task : objet Task à afficher
-     * - element : objet HTMLElement du DOM dans lequel
-     *   le code HTML doit être affiché
-     * @param {*} param - Objet de paramétrage
-     * @example
-     * let tk = new Task('test', null);
-     * let compoTk = new CompoTask({
-     *    task: tk,
-     *    element: document.getElementById('task')
-     * }) 
-     * compoTk.render();
-     */
+
     render() {
         let children = [];
         if (this.param.taskList) {
