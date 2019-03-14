@@ -1,0 +1,9 @@
+#tasks div {
+    border: solid 1px rgb(172, 15, 15);
+    background-color: rgb(136, 255, 0);
+    text-align: center;
+    margin: 5%;
+}
+#tasks{
+    width: 15%;
+}
